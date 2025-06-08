@@ -18,10 +18,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.cerbon.ml_template.fabric.ModNameFabric"
+      "com.cerbon.super_ore_block.fabric.SuperOreBlockFabric"
     ],
     "client": [
-      "com.cerbon.ml_template.fabric.ModNameFabric"
+      "com.cerbon.super_ore_block.fabric.SuperOreBlockFabric"
     ]
   },
   "mixins": [
