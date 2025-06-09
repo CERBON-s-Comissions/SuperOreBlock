@@ -1,0 +1,14 @@
+{
+  "values": [
+    "super_ore_block:super_coal_block",
+    "super_ore_block:super_copper_block",
+    "super_ore_block:super_diamond_block",
+    "super_ore_block:super_emerald_block",
+    "super_ore_block:super_gold_block",
+    "super_ore_block:super_iron_block",
+    "super_ore_block:super_lapis_block",
+    "super_ore_block:super_netherite_block",
+    "super_ore_block:super_redstone_block",
+    "super_ore_block:super_ore_block"
+  ]
+}

@@ -1,6 +1,5 @@
 package com.cerbon.super_ore_block.mixin.test;
 
-import com.cerbon.cerbons_api.api.static_utilities.MiscUtils;
 import com.cerbon.super_ore_block.SuperOreBlock;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.main.GameConfig;
@@ -15,6 +14,6 @@ public abstract class TestMixin {
 
     @Inject(method = "<init>", at = @At("TAIL"))
     private void sendMessageIfWorking(GameConfig gameConfig, CallbackInfo ci) {
-        SuperOreBlock.LOGGER.info("Common mixins are working for {} on {}!",  SuperOreBlock.MOD_NAME, MiscUtils.getPlatformName());
+        SuperOreBlock.LOGGER.info("Common mixins are working for {} on {}!",  SuperOreBlock.MOD_NAME, "Common");
     }
 }

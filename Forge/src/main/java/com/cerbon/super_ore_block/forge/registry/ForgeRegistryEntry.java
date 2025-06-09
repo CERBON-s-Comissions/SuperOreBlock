@@ -1,6 +1,6 @@
 package com.cerbon.super_ore_block.forge.registry;
 
-import com.cerbon.cerbons_api.api.registry.RegistryEntry;
+import com.cerbon.super_ore_block.registry.RegistryEntry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.registries.RegistryObject;
 

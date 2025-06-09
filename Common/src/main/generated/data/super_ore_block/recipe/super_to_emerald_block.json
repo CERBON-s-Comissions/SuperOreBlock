@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "normal_ore_blocks",
+  "ingredients": [
+    {
+      "item": "super_ore_block:super_emerald_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:emerald_block"
+  }
+}
