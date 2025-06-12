@@ -4,11 +4,11 @@
   "group": "normal_ore_blocks",
   "ingredients": [
     {
-      "item": "super_ore_block:super_diamond_block"
+      "item": "super_ore_block:super_coal_block"
     }
   ],
   "result": {
     "count": 4,
-    "id": "minecraft:diamond_block"
+    "item": "minecraft:coal_block"
   }
 }

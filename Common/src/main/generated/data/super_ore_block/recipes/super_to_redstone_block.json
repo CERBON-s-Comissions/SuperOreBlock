@@ -4,11 +4,11 @@
   "group": "normal_ore_blocks",
   "ingredients": [
     {
-      "item": "super_ore_block:super_netherite_block"
+      "item": "super_ore_block:super_redstone_block"
     }
   ],
   "result": {
     "count": 4,
-    "id": "minecraft:netherite_block"
+    "item": "minecraft:redstone_block"
   }
 }

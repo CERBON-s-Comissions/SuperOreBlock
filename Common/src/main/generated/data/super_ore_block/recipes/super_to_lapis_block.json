@@ -4,11 +4,11 @@
   "group": "normal_ore_blocks",
   "ingredients": [
     {
-      "item": "super_ore_block:super_copper_block"
+      "item": "super_ore_block:super_lapis_block"
     }
   ],
   "result": {
     "count": 4,
-    "id": "minecraft:copper_block"
+    "item": "minecraft:lapis_block"
   }
 }

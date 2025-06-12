@@ -4,7 +4,7 @@
   "group": "super_ore_blocks",
   "key": {
     "#": {
-      "item": "minecraft:netherite_block"
+      "item": "minecraft:redstone_block"
     }
   },
   "pattern": [
@@ -13,6 +13,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "super_ore_block:super_netherite_block"
+    "item": "super_ore_block:super_redstone_block"
   }
 }

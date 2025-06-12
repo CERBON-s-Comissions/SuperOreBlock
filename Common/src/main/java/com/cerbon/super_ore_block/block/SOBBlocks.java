@@ -31,7 +31,7 @@ public class SOBBlocks {
     public static final RegistryEntry<Block> SUPER_ORE_BLOCK = register(Blocks.NETHERITE_BLOCK, "super_ore_block");
 
     public static RegistryEntry<Block> register(Block toCopy, String id) {
-        RegistryEntry<Block> blockEntry = BLOCKS.register(id, () -> new Block(BlockBehaviour.Properties.ofFullCopy(toCopy)));
+        RegistryEntry<Block> blockEntry = BLOCKS.register(id, () -> new Block(BlockBehaviour.Properties.copy(toCopy)));
         SOBItems.ITEMS.register(id, () -> new BlockItem(blockEntry.get(), new Item.Properties()));
         return blockEntry;
     }

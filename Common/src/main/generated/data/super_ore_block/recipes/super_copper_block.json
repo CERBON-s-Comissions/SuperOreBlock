@@ -4,7 +4,7 @@
   "group": "super_ore_blocks",
   "key": {
     "#": {
-      "item": "minecraft:diamond_block"
+      "item": "minecraft:copper_block"
     }
   },
   "pattern": [
@@ -13,6 +13,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "super_ore_block:super_diamond_block"
+    "item": "super_ore_block:super_copper_block"
   }
 }
