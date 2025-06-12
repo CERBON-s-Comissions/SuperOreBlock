@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "super_ore_block:super_iron_block"
+            "items": ["super_ore_block:super_iron_block"]
           }
         ]
       },
