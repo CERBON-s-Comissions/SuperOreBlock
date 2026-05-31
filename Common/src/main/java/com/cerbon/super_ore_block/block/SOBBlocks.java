@@ -6,6 +6,9 @@ import com.cerbon.super_ore_block.registry.RegistryEntry;
 import com.cerbon.super_ore_block.registry.ResourcefulRegistries;
 import com.cerbon.super_ore_block.registry.ResourcefulRegistry;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -31,8 +34,8 @@ public class SOBBlocks {
     public static final RegistryEntry<Block> SUPER_ORE_BLOCK = register(Blocks.NETHERITE_BLOCK, "super_ore_block");
 
     public static RegistryEntry<Block> register(Block toCopy, String id) {
-        RegistryEntry<Block> blockEntry = BLOCKS.register(id, () -> new Block(BlockBehaviour.Properties.ofFullCopy(toCopy)));
-        SOBItems.ITEMS.register(id, () -> new BlockItem(blockEntry.get(), new Item.Properties()));
+        RegistryEntry<Block> blockEntry = BLOCKS.register(id, () -> new Block(BlockBehaviour.Properties.ofFullCopy(toCopy).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(SuperOreBlock.MOD_ID, id)))));
+        SOBItems.ITEMS.register(id, () -> new BlockItem(blockEntry.get(), new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(SuperOreBlock.MOD_ID, id)))));
         return blockEntry;
     }
 

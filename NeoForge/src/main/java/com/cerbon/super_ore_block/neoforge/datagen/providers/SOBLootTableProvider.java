@@ -10,14 +10,14 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
-public class SOBLootTableProvider {
-
-    public static LootTableProvider create(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        return new LootTableProvider(
-                output,
-                Set.of(),
-                List.of(new LootTableProvider.SubProviderEntry(SOBBlockLootTables::new, LootContextParamSets.BLOCK)),
-                registries
-        );
-    }
-}
+//public class SOBLootTableProvider {
+//
+//    public static LootTableProvider create(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+//        return new LootTableProvider(
+//                output,
+//                Set.of(),
+//                List.of(new LootTableProvider.SubProviderEntry(SOBBlockLootTables::new, LootContextParamSets.BLOCK)),
+//                registries
+//        );
+//    }
+//}

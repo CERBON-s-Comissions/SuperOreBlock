@@ -1,38 +1,20 @@
-{
-  "type": "minecraft:crafting_shapeless",
-  "category": "building",
-  "group": "normal_ore_blocks",
-  "ingredients": [
-    {
-      "item": "super_ore_block:super_coal_block"
-    },
-    {
-      "item": "super_ore_block:super_copper_block"
-    },
-    {
-      "item": "super_ore_block:super_diamond_block"
-    },
-    {
-      "item": "super_ore_block:super_emerald_block"
-    },
-    {
-      "item": "super_ore_block:super_gold_block"
-    },
-    {
-      "item": "super_ore_block:super_iron_block"
-    },
-    {
-      "item": "super_ore_block:super_lapis_block"
-    },
-    {
-      "item": "super_ore_block:super_netherite_block"
-    },
-    {
-      "item": "super_ore_block:super_redstone_block"
-    }
-  ],
-  "result": {
-    "count": 1,
-    "id": "super_ore_block:super_ore_block"
-  }
+﻿{
+    "type":  "minecraft:crafting_shapeless",
+    "category":  "building",
+    "group":  "normal_ore_blocks",
+    "ingredients":  [
+                        "super_ore_block:super_coal_block",
+                        "super_ore_block:super_copper_block",
+                        "super_ore_block:super_diamond_block",
+                        "super_ore_block:super_emerald_block",
+                        "super_ore_block:super_gold_block",
+                        "super_ore_block:super_iron_block",
+                        "super_ore_block:super_lapis_block",
+                        "super_ore_block:super_netherite_block",
+                        "super_ore_block:super_redstone_block"
+                    ],
+    "result":  {
+                   "id":  "super_ore_block:super_ore_block",
+                   "count":  1
+               }
 }

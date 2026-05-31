@@ -2,8 +2,8 @@ import net.darkhax.curseforgegradle.TaskPublishCurseForge
 
 plugins {
     id "architectury-plugin" version "${architecture_plugin_version}"
-    id "dev.architectury.loom" version "${loom_version}" apply false
-    id "com.github.johnrengelman.shadow" version "${shadow_plugin_version}"
+    id "dev.architectury.loom-no-remap" version "${loom_version}" apply false
+    id "com.gradleup.shadow" version "${shadow_plugin_version}"
     id 'net.darkhax.curseforgegradle' version "${curseforge_gradle_version}"
     id "com.modrinth.minotaur" version "${minotaur_version}"
 }
@@ -13,28 +13,19 @@ architectury {
 }
 
 subprojects {
-    apply plugin: "dev.architectury.loom"
-    apply plugin: "com.github.johnrengelman.shadow"
+    apply plugin: "dev.architectury.loom-no-remap"
+    apply plugin: "com.gradleup.shadow"
 
     base {
-        archivesBaseName = archives_base_name + "-${projectDir.canonicalFile.name}-${minecraft_version}"
-    }
-
-    loom {
-        silentMojangMappingsLicense()
+        archivesName  = archives_base_name + "-${projectDir.canonicalFile.name}-${minecraft_version}"
     }
 
     dependencies {
         minecraft "com.mojang:minecraft:${minecraft_version}"
 
-        mappings loom.layered() {
-            officialMojangMappings()
-            parchment "org.parchmentmc.data:parchment-${mapping_version}@zip"
-        }
-
         compileOnly annotationProcessor("io.github.llamalad7:mixinextras-common:${mixin_extras_version}")
 
-        modCompileOnlyApi "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+        //modCompileOnlyApi "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
     }
 
     sourceSets.main.resources { srcDir 'src/main/generated' }
@@ -109,7 +100,7 @@ subprojects {
 
         apiToken = System.getenv("CURSEFORGE_TOKEN")
 
-        def mainFile = upload(curseforge_project_id, remapJar)
+        def mainFile = upload(curseforge_project_id, jar)
         mainFile.addModLoader(project.name)
         mainFile.addGameVersion(game_versions.replaceAll(" ", "").split(","))
 
@@ -131,12 +122,12 @@ subprojects {
         token = System.getenv("MODRINTH_TOKEN")
 
         projectId = modrinth_project_id
-        uploadFile = remapJar
+        uploadFile = jar
         loaders = [project.name]
 
         gameVersions = game_versions.replaceAll(" ", "").split(",") as Iterable<? extends String>
 
-        versionName = project.base.archivesBaseName + "-" + mod_version
+        versionName = "$project.base.archivesName  + "-" + $mod_version"
         versionNumber = mod_version
         versionType = release_type
 

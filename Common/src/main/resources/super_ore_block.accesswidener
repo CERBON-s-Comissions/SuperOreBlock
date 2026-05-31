@@ -1,7 +1,7 @@
-accessWidener   v2  named
+accessWidener   v2  official
 
 # Classes
 
 # Methods
-
+accessible method net/minecraft/world/item/CreativeModeTab$Output accept (Lnet/minecraft/world/level/ItemLike;)V
 # Fields

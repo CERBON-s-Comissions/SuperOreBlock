@@ -2,20 +2,20 @@ package com.cerbon.super_ore_block.fabric.registry;
 
 import com.cerbon.super_ore_block.registry.RegistryEntry;
 import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 import java.util.function.Supplier;
 
 public class FabricRegistryEntry<T> implements RegistryEntry<T> {
-    private final ResourceLocation id;
+    private final Identifier id;
     private final T value;
 
-    private FabricRegistryEntry(ResourceLocation id, T value) {
+    private FabricRegistryEntry(Identifier id, T value) {
         this.id = id;
         this.value = value;
     }
 
-    public static <T, I extends T> FabricRegistryEntry<I> of(Registry<T> registry, ResourceLocation id, Supplier<I> supplier) {
+    public static <T, I extends T> FabricRegistryEntry<I> of(Registry<T> registry, Identifier id, Supplier<I> supplier) {
         return new FabricRegistryEntry<>(id, Registry.register(registry, id, supplier.get()));
     }
 
@@ -25,7 +25,7 @@ public class FabricRegistryEntry<T> implements RegistryEntry<T> {
     }
 
     @Override
-    public ResourceLocation getId() {
+    public Identifier getId() {
         return this.id;
     }
 }

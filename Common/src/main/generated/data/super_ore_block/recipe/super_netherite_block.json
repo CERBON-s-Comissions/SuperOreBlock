@@ -1,18 +1,16 @@
-{
-  "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "group": "super_ore_blocks",
-  "key": {
-    "#": {
-      "item": "minecraft:netherite_block"
-    }
-  },
-  "pattern": [
-    "##",
-    "##"
-  ],
-  "result": {
-    "count": 1,
-    "id": "super_ore_block:super_netherite_block"
-  }
+﻿{
+    "type":  "minecraft:crafting_shaped",
+    "category":  "building",
+    "group":  "super_ore_blocks",
+    "key":  {
+                "#":  "minecraft:netherite_block"
+            },
+    "pattern":  [
+                    "##",
+                    "##"
+                ],
+    "result":  {
+                   "id":  "super_ore_block:super_netherite_block",
+                   "count":  1
+               }
 }

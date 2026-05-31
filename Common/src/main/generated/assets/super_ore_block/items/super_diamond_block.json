@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "super_ore_block:item/super_diamond_block"
+  }
+}

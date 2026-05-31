@@ -1,14 +1,12 @@
-{
-  "type": "minecraft:crafting_shapeless",
-  "category": "building",
-  "group": "normal_ore_blocks",
-  "ingredients": [
-    {
-      "item": "super_ore_block:super_iron_block"
-    }
-  ],
-  "result": {
-    "count": 4,
-    "id": "minecraft:iron_block"
-  }
+﻿{
+    "type":  "minecraft:crafting_shapeless",
+    "category":  "building",
+    "group":  "normal_ore_blocks",
+    "ingredients":  [
+                        "super_ore_block:super_iron_block"
+                    ],
+    "result":  {
+                   "id":  "minecraft:iron_block",
+                   "count":  4
+               }
 }

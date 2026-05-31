@@ -1,7 +1,7 @@
 package com.cerbon.super_ore_block.neoforge.registry;
 
 import com.cerbon.super_ore_block.registry.RegistryEntry;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
 public class NeoForgeRegistryEntry<R, T extends R> implements RegistryEntry<T> {
@@ -17,7 +17,7 @@ public class NeoForgeRegistryEntry<R, T extends R> implements RegistryEntry<T> {
     }
 
     @Override
-    public ResourceLocation getId() {
+    public Identifier getId() {
         return object.getId();
     }
 }

@@ -22,7 +22,7 @@ public class SOBCreativeTabs {
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP,6)
                     .title(Component.translatable("itemGroup.super_ore_block.items"))
                     .icon(() -> new ItemStack(SOBBlocks.SUPER_ORE_BLOCK.get()))
-                    .displayItems((itemDisplayParameters, output) -> SOBItems.ITEMS.boundStream().forEach(output::accept))
+                    .displayItems((_, output) -> SOBItems.ITEMS.boundStream().forEach(output::accept))
                     .build()
     );
 
